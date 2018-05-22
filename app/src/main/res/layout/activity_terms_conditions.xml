@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/splash_gradient_color"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvGoldSpot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardBackgroundColor="@color/colorTransperent"
+        app:cardUseCompatPadding="true">
+
+        <com.patondekarjewellers.custom_views.CustomTextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/terms"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/colorWhite" />
+
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:src="@drawable/line" />
+    </RelativeLayout>
+</android.support.v7.widget.LinearLayoutCompat>

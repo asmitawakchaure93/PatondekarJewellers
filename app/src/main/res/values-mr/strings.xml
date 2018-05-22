@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">पातोन्डेकर ज्वेलर्स</string>
+    <string name="live_gold">थेट गोल्ड दर अँप्लिकेशन \n पातोन्डेकर ज्वेलर्स द्वारा</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="latest_gold_rates">Latest Gold Rates</string>
+    <string name="latest_silver_rates">Latest Silver Rates</string>
+    <string name="latest_dollar_rates">Latest Dollar Rates</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="fullname">Full Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Contact</string>
+    <string name="signup">Sign Up</string>
+    <string name="city">City</string>
+    <string name="ok">OK</string>
+    <string name="please_enter_username">Please enter your Name</string>
+    <string name="please_enter_email">Please enter your Email Address</string>
+    <string name="please_enter_valid_email">Please enter valid Email Address</string>
+    <string name="please_enter_contact_number">Please enter your Contact Number</string>
+    <string name="please_enter_valid_contact_number">Please enter valid Contact Number</string>
+    <string name="under_construction">This section is under construction</string>
+    <string name="gold_costing">Gold Costing</string>
+    <string name="gold_spot">Gold Spot</string>
+    <string name="gold_mumbai_rtgs">Gold Mumbai 99.5 RTGS</string>
+    <string name="gold_mumbai_hazir">Gold Mumbai 99.5 HAZIR</string>
+    <string name="gold_mumbai_hazir_gst">Gold Mumbai 99.50 With GST RTGS</string>
+    <string name="home">डॅशबोर्ड</string>
+    <string name="cap_events">support</string>
+    <string name="gold_details">Gold Rates Details</string>
+    <string name="about_us">आमच्या विषयी</string>
+    <string name="support">Support</string>
+    <string name="contact_us">आमच्याशी संपर्क साधा</string>
+    <string name="terms_conditions">नियम आणि अटी</string>
+    <string name="dashboard">डॅशबोर्ड</string>
+    <string name="shop_name">Shop Name</string>
+    <string name="current_gold_rate">Gold Market Rate</string>
+    <string name="current_dollar_rate">Current Dollar Rate</string>
+    <string name="rupee">\u20B9</string>
+    <string name="inr">INR</string>
+    <string name="rate_valid_for_ornaments">सोन्याचे दर केवळ तयार दागिन्यांसाठी वैध आहे</string>
+    <string name="please_enter_shop_name">Please enter Shop Name</string>
+    <string name="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.  Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</string>
+    <string name="jalgoan_rates">पातोन्डेकर ज्वेलर्स जळगाव 99.5 आरटीजीएस</string>
+    <string name="jalgoan_rates_gst">पातोन्डेकर ज्वेलर्स जळगाव 99.5 आरटीजीएस जीएसटी सह</string>
+    <string name="bank_details">बँक तपशील</string>
+    <string name="aakash_manufacture">
+        <b> आकाश मॅन्युफॅक्चरिंग </b>
+        \n\n कोटक महिंद्र बँक
+        \n शाखा -
+        पटेल प्लाझा, जळगाव
+    \n ए / सी क्रमांक 4211253361 \n आयएफएससी कोड:- KKBK0000697</string>
+    <string name="patondekar_bank">
+        <b> पातोन्डेकर ज्वेलर्स </b>
+        \n\n कोटक महिंद्रा बँक
+        \n शाखा - पटेल प्लाझा,
+        जळगाव \n
+    ए / सी क्रमांक 3811428728 \n आयएफएससी कोड:- KKBK0000697
+    </string>
+    <string name="terms"><b>पातोन्डेकर ज्वेलर्ससाठी अटी व शर्ती:</b> \n\n
+        <b>✓ </b> दर केवळ सोन्याचे दागिने साठी वैध आहेत \n\n
+        <b>✓ </b> फक्त आरटीजीएस द्वारे भरणा लागू आहे \n\n
+        <b>✓ </b> किमान आरटीजीएस बुकिंगची रक्कम आहे \u20B950000/- \n\n
+        <b>✓ </b> बुकिंग त्याच दिवशी वैध आहे \n
+    </string>
+    <string name="about_jewellers">नमस्कार!\n
+        आपल्या सोन्या चांदीच्या व्यवसायात जेवढे ग्राहक तेवढ्या आवडी-निवडी असतात. शुध्दतेसोबतच शेकडों
+        डिझाईनची उपलब्धता ही दोन्ही तत्त्वच आपल्या दागिन्यांच्या व्यवसायाला लोकप्रिय करतात. पातोन्डेकर ज्वेलर्सने मागील
+         ४ दशकांपासून तब्बल ३ पिढ्यांची विश्वसनीयता यांच दोन गोष्टींनी वाढवत नेली आहे. म्हणूनच आपल्या व्यवसायवृद्धीसाठी परंपरा व आधुनिकतेचा सुवर्णमध्य ही ओळख आम्हाला आनंददायी वाटते. या बळावर आम्ही आणखी नव्या उर्जेने व उत्साहाने
+सुसज्ज झालो आहोत नवनवीन डिझाईनमधील हजारों दागिन्यांचा मनमोहक खजिना घेऊन आपल्या प्रगतीचा आलेख उंचावण्यासाठी... चला, हातात हात घेऊया, व्यावसायिक सोबती होऊया!</string>
+    <string name="patodekar">पातोन्डेकर ज्वेलर्स</string>
+    <string name="contact_us_on">फोन: 0257-2223935 | 2240097
+        \n\nचांदी विभाग:0257-2223635
+        \n\nऑर्डर विभाग: 0257-2222927
+        \nपत्ता: फर्स्ट फ्लोअर, सृष्टी कॉम्प्लेक्स, बालाजी पेठ, सराफ बाजार, जळगाव.</string>
+    <string name="feel_free_to_contact">आमच्याशी येथे संपर्क साधा:- </string>
+    <string name="director_one"><b>आदित्य किरण पातोन्डेकर</b>
+        \n3rd जनरेशन उद्योजक \nबी.बी.एम (एमआयटी कॉलेज, पुणे) \n संचालक पातोन्डेकर ज्वेलर्स येथे</string>
+    <string name="director_two"><b>आकाश रविंद्र पातोन्डेकर</b> \n3rd जनरेशन उद्योजक \n
+        एमबीए (वेस्टमिन्स्टर बिझनेस स्कूल, लंडन) \n
+        संचालक पातोन्डेकर ज्वेलर्स येथे</string>
+    <string name="about_patondekar_jewellers">पातोन्डेकर ज्वेलर्स बद्दल</string>
+    <string name="settings">सेटिंग्ज</string>
+    <string name="please_select_language">Please select language</string>
+    <string name="phone_number">+919834141344</string>
+    <string name="contact">संपर्क साधा:</string>
+</resources>

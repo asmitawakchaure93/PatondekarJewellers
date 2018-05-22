@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:wave="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/splash_gradient_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llParent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ivBorderLine"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/colorTransperent"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.patondekarjewellers.custom_views.CustomTextViewBold
+                            android:id="@+id/tvgoldCurrentDate"
+                            style="@style/SmallWhiteText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"/>
+
+                        <com.patondekarjewellers.custom_views.CustomTextViewBold
+                            style="@style/SmallWhiteText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/current_gold_rate"
+                            android:textColor="@color/colorGold"/>
+
+                        <com.patondekarjewellers.custom_views.CustomTextViewBold
+                            android:id="@+id/tvCurrentGoldRate"
+                            style="@style/SmallWhiteText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:paddingLeft="@dimen/_5sdp"
+                            android:paddingRight="@dimen/_5sdp"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/colorTransperent"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.patondekarjewellers.custom_views.CustomTextViewBold
+                            android:id="@+id/tvCurrentDollarDate"
+                            style="@style/SmallWhiteText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"/>
+
+                        <com.patondekarjewellers.custom_views.CustomTextViewBold
+                            style="@style/SmallWhiteText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/current_dollar_rate"
+                            android:textColor="@color/colorGold"/>
+
+                        <com.patondekarjewellers.custom_views.CustomTextViewBold
+                            android:id="@+id/tvCurrentDollarRate"
+                            style="@style/SmallWhiteText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:paddingLeft="@dimen/_5sdp"
+                            android:paddingRight="@dimen/_5sdp"
+                            android:text="INR 64.5797"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <com.patondekarjewellers.custom_views.CustomTextViewBold
+                style="@style/SmallGoldText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center"
+                android:text="@string/patodekar"
+                android:visibility="gone"
+                android:textSize="@dimen/_20sdp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/eng"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                />
+
+            <com.patondekarjewellers.custom_views.CustomTextViewRegular
+                android:id="@+id/tvMarquee"
+                style="@style/SmallGoldText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@drawable/gradient_transparent_color"
+                android:marqueeRepeatLimit="marquee_forever"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/colorGold"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <com.patondekarjewellers.custom_views.CustomTextViewBold
+                        style="@style/CustomSmallWhiteText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:gravity="center"
+                        android:text="@string/jalgoan_rates"/>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cvJalgoanGold"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        app:cardBackgroundColor="@color/colorTransperent"
+                        app:cardUseCompatPadding="true">
+
+                        <com.patondekarjewellers.custom_views.CustomTextViewBold
+                            android:id="@+id/tvJalgoanRate"
+                            style="@style/CustomSmallWhiteText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"/>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cvGoldSpot"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:visibility="gone"
+                        app:cardBackgroundColor="@color/colorTransperent"
+                        app:cardUseCompatPadding="true">
+
+                        <com.patondekarjewellers.custom_views.CustomTextViewBold
+                            android:id="@+id/tvGoldSpotRate"
+                            style="@style/CustomSmallWhiteText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"/>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/colorGold"/>
+
+                    <com.patondekarjewellers.custom_views.CustomTextViewBold
+                        style="@style/CustomSmallWhiteText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/jalgoan_rates_gst"/>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cvJalgoanGSTGold"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        app:cardBackgroundColor="@color/colorTransperent"
+                        app:cardUseCompatPadding="true">
+
+                        <com.patondekarjewellers.custom_views.CustomTextViewBold
+                            android:id="@+id/tvJalgoanGSTRate"
+                            style="@style/CustomSmallWhiteText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"/>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/colorGold"
+                        android:visibility="gone"/>
+
+                    <com.patondekarjewellers.custom_views.CustomTextViewBold
+                        style="@style/CustomSmallWhiteText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/gold_mumbai_rtgs"
+                        android:visibility="gone"/>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cvGoldMumbai995RTGS"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:visibility="gone"
+                        app:cardBackgroundColor="@color/colorTransperent"
+                        app:cardUseCompatPadding="true">
+
+                        <com.patondekarjewellers.custom_views.CustomTextViewBold
+                            android:id="@+id/tvGoldMumbai995RTGS"
+                            style="@style/CustomSmallWhiteText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:visibility="gone"/>
+
+                    </android.support.v7.widget.CardView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/colorGold"/>
+
+
+                    <com.patondekarjewellers.custom_views.CustomTextViewBold
+                        style="@style/CustomSmallWhiteText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/gold_mumbai_hazir_gst"
+                        android:visibility="gone"/>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cvGoldMumbai9950WithGST"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:visibility="gone"
+                        app:cardBackgroundColor="@color/colorTransperent"
+                        app:cardUseCompatPadding="true">
+
+                        <com.patondekarjewellers.custom_views.CustomTextViewBold
+                            android:id="@+id/tvGoldMumbai9950WithGST"
+                            style="@style/CustomSmallWhiteText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:visibility="gone"/>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ivBorderLine"
+            android:orientation="vertical">
+
+            <com.patondekarjewellers.custom_views.CustomTextViewRegular
+                style="@style/SmallWhiteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/_1sdp"
+                android:text="@string/contact"/>
+
+            <com.patondekarjewellers.custom_views.CustomTextViewRegular
+                style="@style/SmallWhiteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="phone"
+                android:gravity="center"
+                android:padding="@dimen/_1sdp"
+                android:text="@string/phone_number"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivBorderLine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/line"/>
+    </RelativeLayout>
+</LinearLayout>

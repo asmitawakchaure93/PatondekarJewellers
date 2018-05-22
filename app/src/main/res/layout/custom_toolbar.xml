@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/colorPrimaryDark"
+              android:orientation="vertical"
+              android:paddingBottom="5dp">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivSideMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:src="@mipmap/menu"/>
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="10dp"
+                android:src="@mipmap/back"
+                android:visibility="gone"/>
+
+            <com.patondekarjewellers.custom_views.CustomTextViewRegular
+                android:id="@+id/tvToolbarTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/colorTransperent"
+                android:drawablePadding="15dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:text="@string/home"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/colorWhite"/>
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/colorGold"/>
+
+</LinearLayout>

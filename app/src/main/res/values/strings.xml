@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Patondekar Jewellers</string>
+    <string name="live_gold">Live Gold Rates Application \n By Patondekar Jewellers</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="latest_gold_rates">Latest Gold Rates</string>
+    <string name="latest_silver_rates">Latest Silver Rates</string>
+    <string name="latest_dollar_rates">Latest Dollar Rates</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="fullname">Full Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Contact</string>
+    <string name="signup">Sign Up</string>
+    <string name="city">City</string>
+    <string name="ok">OK</string>
+    <string name="please_enter_username">Please enter your Name</string>
+    <string name="please_enter_email">Please enter your Email Address</string>
+    <string name="please_enter_valid_email">Please enter valid Email Address</string>
+    <string name="please_enter_contact_number">Please enter your Contact Number</string>
+    <string name="please_enter_valid_contact_number">Please enter valid Contact Number</string>
+    <string name="under_construction">This section is under construction</string>
+    <string name="gold_costing">Gold Costing</string>
+    <string name="gold_spot">Gold Spot</string>
+    <string name="gold_mumbai_rtgs">Gold Mumbai 99.5 RTGS</string>
+    <string name="gold_mumbai_hazir">Gold Mumbai 99.5 HAZIR</string>
+    <string name="gold_mumbai_hazir_gst">Gold Mumbai 99.50 With GST RTGS</string>
+    <string name="home">Dashboard</string>
+    <string name="cap_events">support</string>
+    <string name="gold_details">Gold Rates Details</string>
+    <string name="about_us">About Us</string>
+    <string name="support">Support</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="dashboard">Dashboard</string>
+    <string name="shop_name">Shop Name</string>
+    <string name="current_gold_rate">Gold Market Rate</string>
+    <string name="current_dollar_rate">Current Dollar Rate</string>
+    <string name="rupee">\u20B9</string>
+    <string name="inr">INR</string>
+    <string name="rate_valid_for_ornaments">Rate valid for ready gold ornaments only. </string>
+    <string name="please_enter_shop_name">Please enter Shop Name</string>
+    <string name="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.  Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</string>
+    <string name="jalgoan_rates">Patondekar Jewellers Jalgoan 99.5 RTGS</string>
+    <string name="jalgoan_rates_gst">Patondekar Jewellers Jalgoan 99.5 RTGS with GST</string>
+    <string name="bank_details">Bank Details</string>
+    <string name="aakash_manufacture"><b> Aakash Manufacturing </b> \n\n Kotak Mahindra Bank \n Branch - Patel Plaza, Jalgaon
+    \n A/C No. 4211253361 \n IFSC Code:- KKBK0000697</string>
+    <string name="patondekar_bank"><b> Patondekar Jewellers </b> \n\n Kotak Mahindra Bank \n Branch - Patel Plaza, Jalgaon \n
+    A/C No. 3811428728 \n IFSC Code:- KKBK0000697
+    </string>
+    <string name="terms"><b><![CDATA[Terms & Conditions for Patondekar Jewellers:]]></b> \n\n
+        <b>✓ </b> Rates are valid for Gold Ornaments only \n\n
+        <b>✓ </b> Payment is applicable by RTGS only \n\n
+        <b>✓ </b> Minimum RTGS booking amount is \u20B950000/- \n\n
+        <b>✓ </b> Booking is valid for the same day \n
+    </string>
+    <string name="about_jewellers">Greetings from Patondekar Jewellers! \n\n In our day to day Gold-Silver business
+        activities, every Customer comes up with different set of choices. Purity of the product and millions
+        of Design options, these two aspects makes our business so popular. Over past 4 decades our 3 generations have taken up these business
+        on great heights. Providing a perfect combination of Modernization and traditional gold rituals to our Customers is our identity which makes us really proud.
+        To take this identity on a higher level we are here with more energy and enthusiasm presenting thousands of new design collections of
+        attractive Gold Jewelleries. \n\n
+        So, come on Let\'s walk together hand-in-hand and be our Profession Companion!
+    </string>
+    <string name="patodekar">Patondekar Jewellers</string>
+    <string name="contact_us_on">Phone: 0257-2223935 | 2240097 \n\n Silver Department:0257-2223635 \n\n Order Department: 0257-2222927 \n\nAddress: First Floor, Srushti Complex, Balaji Peth, Saraf Bazar, Jalgoan.</string>
+    <string name="feel_free_to_contact">Feel free to Contact us on:-</string>
+    <string name="director_one"><b>Aditya Kiran Patondekar</b> \n3rd Generation Entrepreneur \nBBM (MIT College, Pune) \nDirector at Patondekar Jewellers </string>
+    <string name="director_two"><b>Aakash Ravindra Patondekar</b> \n3rd Generation Entrepreneur \nMBA (Westminster Business School, London) \nDirector at Patondekar Jewellers</string>
+    <string name="about_patondekar_jewellers">About Patondekar Jewellers</string>
+    <string name="settings">Settings</string>
+    <string name="please_select_language">Please select language</string>
+    <string name="phone_number">+919834141344</string>
+    <string name="contact">Call us on: </string>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/splash_gradient_color"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <com.patondekarjewellers.custom_views.CustomTextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/feel_free_to_contact"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_16sdp"/>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvGoldSpot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            app:cardBackgroundColor="@color/colorTransperent"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <com.patondekarjewellers.custom_views.CustomTextViewRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/contact_us_on"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_300sdp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/contact_us"
+                    />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

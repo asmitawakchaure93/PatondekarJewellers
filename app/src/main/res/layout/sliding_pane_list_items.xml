@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorTransperent"
+              android:padding="@dimen/_10sdp"
+              android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_gravity="start"
+        android:layout_weight="0.1"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/app_name"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:src="@mipmap/username"/>
+
+    <com.patondekarjewellers.custom_views.CustomTextViewBold
+        android:id="@+id/tvChannelShareCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_12sdp"
+
+        />
+
+
+</LinearLayout>
+
