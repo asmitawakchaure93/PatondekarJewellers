@@ -162,12 +162,95 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener
         {
             public void run()
             {
-
-                getLiveRates(HomeActivity.this);
                 getPatondekarGoldDifference(HomeActivity.this);
+                getLiveRates(HomeActivity.this);
             }
         }, 0, 5000);
     }
+
+    private void getPatondekarGoldDifference(Context context)
+    {
+        if (HttpHelper.isNetworkAvailable(context))
+        {
+            RestAdapter restAdapter = new RestAdapter.Builder()
+                    .setEndpoint(HttpHelper.GOLD_VALUE_BASE_URL)
+                    .build();
+
+            NetworkAPI api = restAdapter.create(NetworkAPI.class);
+            api.getGoldDifference(new Callback<JsonObject>()
+            {
+                @Override
+                public void success(JsonObject responseObject, Response response)
+                {
+                    try
+                    {
+                        JSONObject jsonObject = new JSONObject(responseObject.toString());
+                        differenceValue = jsonObject.optInt("Value");
+
+
+                    } catch (Exception e)
+                    {
+                        e.printStackTrace();
+                    }
+                }
+
+                @Override
+                public void failure(RetrofitError error)
+                {
+                    error.printStackTrace();
+
+                }
+            });
+
+
+        }
+    }
+
+    private void getDollarRates(Context context)
+    {
+
+        if (HttpHelper.isNetworkAvailable(context))
+        {
+            RestAdapter restAdapter = new RestAdapter.Builder()
+                    .setEndpoint(HttpHelper.DOLLAR_BASE_URL)
+                    .build();
+
+            NetworkAPI api = restAdapter.create(NetworkAPI.class);
+
+            api.getDollarRates(new Callback<JsonObject>()
+
+            {
+                @Override
+                public void success(JsonObject responseObject, Response response)
+                {
+                    try
+                    {
+                        JSONObject jsonObject = new JSONObject(responseObject.toString());
+                        JSONObject ratesObject = jsonObject.optJSONObject("quotes");
+
+                        String inrRate = ratesObject.optString("USDINR");
+                        tvCurrentDollarRate.setText(getString(R.string.inr) + "  " + inrRate);
+                        AppSession.getInstance().saveDollarPrice(HomeActivity.this, inrRate);
+
+                    } catch (Exception e)
+                    {
+                        e.printStackTrace();
+                    }
+                }
+
+                @Override
+                public void failure(RetrofitError error)
+                {
+                    String rates = error.toString();
+                    //   Toast.makeText(HomeActivity.this, rates, Toast.LENGTH_SHORT).show();
+
+
+                }
+            });
+
+        }
+    }
+
 
     private void getLiveRates(Context context)
     {
@@ -313,89 +396,6 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener
                 public void failure(RetrofitError error)
                 {
                     String rates = error.toString();
-
-                }
-            });
-
-        }
-    }
-
-    private void getPatondekarGoldDifference(Context context)
-    {
-        if (HttpHelper.isNetworkAvailable(context))
-        {
-            RestAdapter restAdapter = new RestAdapter.Builder()
-                    .setEndpoint(HttpHelper.GOLD_VALUE_BASE_URL)
-                    .build();
-
-            NetworkAPI api = restAdapter.create(NetworkAPI.class);
-            api.getGoldDifference(new Callback<JsonObject>()
-            {
-                @Override
-                public void success(JsonObject responseObject, Response response)
-                {
-                    try
-                    {
-                        JSONObject jsonObject = new JSONObject(responseObject.toString());
-                        differenceValue = jsonObject.optInt("Value");
-
-
-                    } catch (Exception e)
-                    {
-                        e.printStackTrace();
-                    }
-                }
-
-                @Override
-                public void failure(RetrofitError error)
-                {
-                    error.printStackTrace();
-
-                }
-            });
-
-
-        }
-    }
-
-    private void getDollarRates(Context context)
-    {
-
-        if (HttpHelper.isNetworkAvailable(context))
-        {
-            RestAdapter restAdapter = new RestAdapter.Builder()
-                    .setEndpoint(HttpHelper.DOLLAR_BASE_URL)
-                    .build();
-
-            NetworkAPI api = restAdapter.create(NetworkAPI.class);
-
-            api.getDollarRates(new Callback<JsonObject>()
-
-            {
-                @Override
-                public void success(JsonObject responseObject, Response response)
-                {
-                    try
-                    {
-                        JSONObject jsonObject = new JSONObject(responseObject.toString());
-                        JSONObject ratesObject = jsonObject.optJSONObject("quotes");
-
-                        String inrRate = ratesObject.optString("USDINR");
-                        tvCurrentDollarRate.setText(getString(R.string.inr) + "  " + inrRate);
-                        AppSession.getInstance().saveDollarPrice(HomeActivity.this, inrRate);
-
-                    } catch (Exception e)
-                    {
-                        e.printStackTrace();
-                    }
-                }
-
-                @Override
-                public void failure(RetrofitError error)
-                {
-                    String rates = error.toString();
-                    //   Toast.makeText(HomeActivity.this, rates, Toast.LENGTH_SHORT).show();
-
 
                 }
             });

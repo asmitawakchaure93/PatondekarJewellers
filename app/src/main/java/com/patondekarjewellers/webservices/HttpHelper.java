@@ -8,10 +8,12 @@ import android.net.NetworkInfo;
  * Created by Akshay on 08-11-2017.
  */
 
-public class HttpHelper
-{
+public class HttpHelper {
     //LIVE URL
-    public static String BASE_URL = "http://spngoldlivebroadcast.noip.us:8888/VOTSBroadcast/Services/xml/GetLiveRateMultipleMatchingTable";
+   public static String BASE_URL = "http://spngoldlivebroadcast.noip.us:8888/VOTSBroadcast/" +
+            "Services/xml/GetLiveRateMultipleMatchingTable";
+
+    //public static String BASE_URL = "http://fastly.glive.in/pu/partners/spn-gold/metadata/bars/15";
 
     //http://fastly.glive.in/pu/partners/spn-gold/metadata/bars/15
     public static String GST_BASE_URL = "http://spngoldlivebroadcast.noip.us:7777/VOTSBroadcastStreaming/Services/xml/GetLiveRate";
@@ -20,21 +22,15 @@ public class HttpHelper
 
     public static String GOLD_VALUE_BASE_URL = "http://115.124.127.89:8174/api/";
 
-    public static boolean isNetworkAvailable(Context context)
-    {
+    public static boolean isNetworkAvailable(Context context) {
         ConnectivityManager connectivity = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
-        if (connectivity == null)
-        {
+        if (connectivity == null) {
             return false;
-        } else
-        {
+        } else {
             NetworkInfo[] info = connectivity.getAllNetworkInfo();
-            if (info != null)
-            {
-                for (int i = 0; i < info.length; i++)
-                {
-                    if (info[i].getState() == NetworkInfo.State.CONNECTED)
-                    {
+            if (info != null) {
+                for (int i = 0; i < info.length; i++) {
+                    if (info[i].getState() == NetworkInfo.State.CONNECTED) {
                         return true;
                     }
                 }
