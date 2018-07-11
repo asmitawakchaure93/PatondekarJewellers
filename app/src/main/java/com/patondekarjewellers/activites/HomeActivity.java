@@ -282,7 +282,7 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener
                     tvGoldMumbai995RTGS.setText(getString(R.string.rupee) + " " + goldMumbaiRTGStwo);
                     current95Price = Float.parseFloat((goldMumbaiRTGStwo));
 
-                    String goldhalfgmWithGSTtwo = rates[23];
+                    String goldhalfgmWithGSTtwo = rates[19];
                     tvGoldMumbai9950WithGST.setText(getString(R.string.rupee) + " " + goldhalfgmWithGSTtwo);
                     current90Price = Float.parseFloat((goldMumbaiRTGStwo));
 
@@ -300,7 +300,7 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener
                     tvJalgoanRate.setText(getString(R.string.rupee) + " " + newJalgoanRates);
                     currentSpotPrice = Float.parseFloat((newJalgoanRates));
 
-                    int patondekarGSTRates;
+                    /*int patondekarGSTRates;
                     if (value.contains("-"))
                     {
                         patondekarGSTRates = Integer.parseInt(goldhalfgmWithGSTtwo) - differenceValue;
@@ -308,10 +308,18 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener
 
                     {
                         patondekarGSTRates = Integer.parseInt(goldhalfgmWithGSTtwo) + differenceValue;
-                    }
+                    }*/
 
                     //int jalgoanGSTRates = Integer.parseInt(goldhalfgmWithGSTtwo) - differenceValue;
-                    String newJalgoanGSTRates = String.valueOf(patondekarGSTRates);
+
+
+                    //Gold Rates with GST 3% of actual amount
+                    int valueWithGST = (int)(patondekarRates*(3.0f/100.0f));
+
+                    int addGST = patondekarRates + valueWithGST;
+
+                    String newJalgoanGSTRates = String.valueOf(addGST);
+
                     tvJalgoanGSTRate.setText(getString(R.string.rupee) + " " + newJalgoanGSTRates);
 
 

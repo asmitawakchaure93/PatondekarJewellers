@@ -1,5 +1,8 @@
 package com.patondekarjewellers.activites;
 
+import android.annotation.TargetApi;
+import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 
 import com.patondekarjewellers.R;
@@ -12,4 +15,6 @@ public class AboutPatondekarJewellers extends BaseActivity {
         setContentView(R.layout.activity_about_patondekar_jewellers);
         setActionbarTitle(getString(R.string.about_patondekar_jewellers));
     }
+
+
 }
