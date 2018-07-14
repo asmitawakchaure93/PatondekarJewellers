@@ -4,8 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PatondekarJewellers.iml" filepath="$PROJECT_DIR$/PatondekarJewellers.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/hellocharts-library/hellocharts-library.iml" filepath="$PROJECT_DIR$/hellocharts-library/hellocharts-library.iml" />
-      <module fileurl="file://$PROJECT_DIR$/shinobicharts-android-library/shinobicharts-android-library.iml" filepath="$PROJECT_DIR$/shinobicharts-android-library/shinobicharts-android-library.iml" />
     </modules>
   </component>
 </project>

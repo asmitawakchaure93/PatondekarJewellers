@@ -75,16 +75,16 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener
         tvMarquee.setSingleLine(true);
         tvMarquee.setSelected(true);
 
-
-        getMonth();
+        //This method was required initially to set the current Date
+        //getMonth();
         callService();
-        if (AppSession.getInstance().getDollarPrice(HomeActivity.this).equalsIgnoreCase(""))
+        /*if (AppSession.getInstance().getDollarPrice(HomeActivity.this).equalsIgnoreCase(""))
         {
             getDollarRates(HomeActivity.this);
         } else
         {
             tvCurrentDollarRate.setText(getString(R.string.inr) + "  " + AppSession.getInstance().getDollarPrice(HomeActivity.this));
-        }
+        }*/
 
     }
 
@@ -156,6 +156,9 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener
 
     private void callService()
     {
+
+        //This method is called 2 webservices one to get the difference amount and second to
+        // get the Live Gold Rates
 
         Timer timer = new Timer();
         timer.schedule(new TimerTask()
